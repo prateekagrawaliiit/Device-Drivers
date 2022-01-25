@@ -1,0 +1,23 @@
+Lab Assignment 1
+
+CED18I040 Prateek Agrawal
+
+Lab Exercise 1 - Write a shell script to print the "day" for a given "date" along with your Roll Number and Name. 
+For example, if "31-Jan-2022" is given as input on screen, then you program should print "Happy Monday - CED22C027 Amitab Dharmendra"
+
+
+Code-
+
+
+(base) prateek@Prateek-PC:~$ D="2022/01/23"
+(base) prateek@Prateek-PC:~$ echo "Happy $(date +%A -d$D)- CED18I040 Prateek Agrawal"
+Happy Sunday- CED18I040 Prateek Agrawal
+
+(base) prateek@Prateek-PC:~$ D="2022/01/01"
+(base) prateek@Prateek-PC:~$ echo "Happy $(date +%A -d$D)- CED18I040 Prateek Agrawal"
+Happy Saturday- CED18I040 Prateek Agrawal
+
+(base) prateek@Prateek-PC:~$ D="1999/05/14"
+(base) prateek@Prateek-PC:~$ echo "Happy $(date +%A -d$D)- CED18I040 Prateek Agrawal"
+Happy Friday- CED18I040 Prateek Agrawal
+
